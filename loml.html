@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOML</title>
+ <meta charset="UTF-8">
+        <meta name="author" content="Allysa Garais Madara">
+        <meta name="description" content="This page contains all about the things I have">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>    
+</head>
+<style>
+* {box-sizing:border-box}
+body{
+    background-color:hsla(0, 26%, 60%, 0.3);
+    font-family: 'Century Gothic';
+	color: #3b363f;
+}
+* {
+    box-sizing: border-box;
+}
+
+header{
+    padding: 0px;
+	background-color:#fdf7f2;
+	border-radius: 60px;
+}
+h2{text-align:center;
+   font-family:Comic Sans MS;
+   padding: 20px;
+}   
+p{padding: 20px;}
+.logo{
+    width: auto;
+    max-width: 132px;
+    height: 20%;
+    display: block;
+	border-radius: 60px;
+}
+li{
+	font-size: 19px;
+ }
+ .button{
+	float: right;
+	background-color: #353950;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;
+	display: block;
+	border-radius: 60px;
+	margin: 20px;
+}
+
+.button:hover{
+	background-color: #494e6d;
+	color: white;
+	text-decoration: none; 
+	
+}
+.bbutton{
+	float: left;
+	background-color: #353950;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;
+	display: block;
+	border-radius: 60px;
+	margin: 20px;
+}
+
+.bbutton:hover{
+	background-color: #494e6d;
+	color: white;
+	text-decoration: none; 
+	
+}
+li {
+  float: right;
+  margin: 20px;
+}
+
+li a, .dropbtn{
+  display: block;
+  color: #17120d;
+  text-align: Left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #423025;
+  color: beige;
+  padding: auto;
+  border-radius: 10px;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  display:none;
+  position: fixed;
+  margin-right: 20px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 5px;
+}
+
+.dropdown-content a {
+  color: #423025;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #423025;
+  color:beige;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ .icon{
+	float: right;
+	display: block;
+	background-color: transparent;
+	color: #3b363f;
+	text-align: center;
+	padding: 14px;
+	text-decoration:none;
+	border-radius: 10px;
+	height: auto;
+    margin: 20px;
+}
+
+.icon:hover {
+color:beige;
+    display: block;
+	background-color: #423025;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2 {
+  display: none;
+}
+img{vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  background-color:#fdf7f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+<body>
+	<header>
+	<li class="dropdown">
+    <a href="#home" class="dropbtn"><span class="material-symbols-outlined">menu
+  </span></a>
+  <div class="dropdown-content">
+    <a href="bio.html">Biography</a>
+    <a href="interests.html">HIT</a>
+    <a href="loml.html">LOML</a>
+	<a href="#">Families & Friends</a>
+	<a href="contact.html">Contact</a>
+    </div>
+    </li>
+        </a>
+        <a href="index.html" class="icon">
+                <span class="material-symbols-outlined">home
+                </span>
+        </a>
+		<img src="logoko.jpg" class="logo"></img>
+	</header>
+	<h2> LOML </h2>
+	<p> Now, let's delve into something that holds a special place in my heart. But before we dive in, here's a heads-up - I might just talk about K-pop a tad too much, so please bear with me.
+<br>I mentioned earlier that watching KDramas is one of my hobbies, but my love for all things Korean goes beyond that. I'm also a huge fan of K-pop. I understand there are many misconceptions and negative stereotypes surrounding K-pop, especially among non-K-pop fans. Allow me to share what K-pop truly means to me and clear up some of those misconceptions.
+<br><br>My journey into K-pop began back in grade 7, right around the peak of Twice's and Blackpink's careers. I vividly recall tuning in to their music every day at the local computer shop after school. It was like my daily reward after a tiring day!
+<br><br>K-pop, to me, is more than just music. It's a significant part of my life. During some of my toughest moments, the music, talent, attitudes, and humor of these K-pop groups have been a lifeline. Their incredible sense of humor never fails to make me smile, laugh, and giggle. It's hard to put into words, but I can confidently say that I find the strength to face each day because of these K-pop groups.
+<br><br>I'm what they call a "multi-stan," meaning I'm a fan of many groups spanning different K-pop generations. However, there are two groups that have held a special place in my heart from the very beginning - Seventeen and Twice. I can honestly say that they are the loves of my life. Let me introduce you to my ult groups.
+<br><br><br><b>Seventeen</b> is a remarkable boy group made up of 13 members - I know, it sounds a bit puzzling, right? Well, let me break it down for you. In their group, they have 3 sub-units. First, there's the hip-hop unit, consisting of 4 members (Vernon, Scoups, Mingyu, and Wonwoo). Then, there's the dance unit, also with 4 members (Hoshi, Dino, The8, and Jun). Finally, there's the vocal unit, made up of 5 members (Seungkwan, DK, Woozi, Joshua, and Jeonghan). Add these up: 13 members + 3 sub-units + 1 whole group, and you get Seventeen. Makes sense now, right? 
+	Seventeen was brought together by Pledis Co. quite a while back. The company scouted these talented individuals and spent several years training them. You can catch glimpses of their journey in the green room through their pre-debut videos on YouTube (if you know, you know). 
+	Here's a fun fact: Seventeen actually has 3 leaders - Woozi for the vocal team, Hoshi for the dance team, and Scoups for the hip-hop team and the entire group. 
+	My personal journey with Seventeen is relatively recent. While I had heard of them before, I didn't become a full-fledged fan until earlier this year. But here's the thing, as Carats (that's what Seventeen's fans are called) say, "You didn't find them late; you found them exactly when you needed them." That quote gave me chills. 
+	I started getting into them through short clips on TikTok that showcased their incredible bond and humor. Eventually, I found myself on their YouTube channel, binge-watching their videos, and losing track of time. They became my ultimate comfort zone. Let me tell you, they are some of the funniest idols I've encountered in my 7 years as a K-pop stan. Sometimes, I forget they're idols; I swear they could moonlight as comedians. But honestly, who's complaining? I'll never get tired of watching these boys goofing around like children. 
+	Now, let's talk about who my bias is. Honestly, if you're a Carat, choosing just one bias is like trying to pick your favorite star in the night sky. The members have a way of pulling you in different directions every day, making it a delightful dilemma. But here's the thing, that's what makes Seventeen so special. Each member possesses unique attributes and characteristics that will have you falling head over heels for them.
+	I could go on and on, but I'll stop here. I'll leave some of their discography below, so it's up to you whether you want to dive deeper. However, I can guarantee you that stanning Seventeen will be one of the smartest decisions you'll ever make in your life.
+<br><br><b>Twice</b> is a girl group formed through a survival show called "Sixteen," consisting of 9 talented members: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, and Tzuyu. My ultimate bias is Momoring, the dancing machine. I discovered and fell in love with them in 2019 when their iconic songs "Fancy" and "Feel Special" were taking the K-pop world by storm. Besides Blackpink, no other group has reached the same level of importance in my life as Twice. Their "Time to Twice" episodes became my daily dose of happiness, especially during the pandemic when going out was limited. They rescued me from sadness and loneliness, and that's why my loyalty to them runs deep. By the way, did I mention that my bias is Momo? My bad, but I just adore her. She's the clumsiest and funniest, yet she's so mother. Her determination and hard work during their survival show truly resonate with me. This page isn't nearly enough for me to cover everything about Twice, so I'll stop my chatter and let you explore and discover them for yourself. Below, you'll find Twice's discography from their debut to their latest releases. Enjoy, and stan Twice for better life!</p>
+		<br><br><br><div class="slideshow-container">
+<p>Twice: title tracks/kor&eng only</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+	<div class="numbertext">1 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/The-Story-Begins.jpg" style="width:100%">
+	<div class="text"> Twice debuted on October 20, 2015 along with their first mini album called "The Story Begins" with the title track "Like Ooh Aah". </div>
+  </div>
+  <div class="mySlides1">
+    <div class="numbertext">2 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/Page-Two-800x800.jpg" style="width:100%">
+	<div class="text"> Almost a year later, they had a comeback and released their second mini album called "Page Two" with their title track "Cheer Up" which gained them so much popularity </div>
+  </div>
+  <div class="mySlides1">
+    <div class="numbertext">3 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/TWICEcoaster-Lane-1-800x800.jpg" style="width:100%">
+   <div class="text"> Due to their instant popularity and huge engagement after the last album, they then released their third mini album on October 24, 2016 called "TWICEcoaster: Lane 1" with the title track TT.</div>
+ </div>
+ <div class="mySlides1">
+    <div class="numbertext">4 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/TWICEcoaster-Lane-2-800x800.jpg" style="width:100%">
+	<div class="text"> They released the repackaged mini album "TWICEcoaster:Lane 2" on February 20, 2017 with the title track called "Knock Knock".</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">5 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/Signal-800x800.jpg" style="width:100%">
+   <div class="text"> After releasing their digital mini album called "What's Twice" shortly after the repackaged album, they then released their 4th mini album called "Signal" on the 15th of May on that same year with the title track "Signal"</div>
+ </div>
+ <div class="mySlides1">
+    <div class="numbertext">6 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/twicetagram-800x800.jpg" style="width:100%">
+	<div class="text">Months later, after they released 2 japanese album in between, they finally released their first full album called "Twicetagram" on October 30 on that same year also.</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">7 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/What-is-Love-800x800.jpg" style="width:100%">
+	<div class="text">After repackaging the full album and releasing another japanese mini album, they released their 5th mini album called "What is Love" on April 9 the following year.</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">8 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/Summer-Nights-800x800.jpg" style="width:100%">
+	<div class="text">2018 is the year where they are recognized slowly by international fans. They released a few japanese mini album here and there and released a repackaged mini album called "Summer Nights" with the title track "Dance the Night Away".</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">9 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/YES-or-YES-800x800.jpg" style="width:100%">
+	<div class="text">They also released another mini album called "Yes or Yes' on November 5 on that same year.</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">10 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/Fancy-You-800x800.jpg" style="width:100%">
+	<div class="text">2019 came and it was both their peak in popularity and also a bad year for the members. They released mini albums on that year including the album "Fancy You' with the title track "Fancy" which led them to gaining more engagement and popularity across the world.</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">11 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/Feel-Special-800x800.jpg" style="width:100%">
+	<div class="text">At the third quarter of year 2019, they then again released a new mini album called "Feel Special" on September 23, 2019. </div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">12 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/More-and-More.jpeg" style="width:100%">
+	<div class="text">Summer of 2020, they released a mini album called "More and More". They also released some japanese mini albums and an english version of their title track</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">13 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/Eyes-Wide-Open.jpg" style="width:100%">
+	<div class="text">After 3 years of releasing mini albums, they finally released their second full album on October 26, 2020 called "Eyes Wide Open" with the title track "I Can't Stop Me".</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">14 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/436525da4590f09ba105739a9a1ee104.1000x1000x1-800x800.jpg" style="width:100%">
+	<div class="text">They are thriving and releasing several mini albums on the year 2020. Summer of the following year, they released a mini album called "Taste of Love" with the title track "Alcohol Free".</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">15 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/1-The-Feels-Twice-Album.jpg" style="width:100%">
+	<div class="text">After releasing their japanese full album, they released their first ever english single called "The Feels" on October 1, 2021.</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">16 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/2-Formula-of-love-Twice-Album-800x800.jpg" style="width:100%">
+	<div class="text">A month later, they released their 3rd full album called "Formula of Love: 0+T=<3" with the title track "Scientist".</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">17 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2019/09/1CB7D750-A14C-4431-8044-D62BD1A86E4B-800x800.png" style="width:100%">
+	<div class="text">Between 1&2 was released on August 26, 2022 with the title track "Talk that Talk". They also released japanese mini albums in between the year 2021-2022</div>
+</div>
+<div class="mySlides1">
+    <div class="numbertext">18 / 18</div>
+    <img src="https://kprofiles.com/wp-content/uploads/2023/03/READY-TO-BE-TWICE.jpg" style="width:100%">
+	<div class="text">The next mini album that they released was on March 10, 2023 called "Ready to Be" with the title track "Set Me Free" and their second english single called "Moonlight Sunrise". They also released a japanese album shortly after releasing this.</div>
+</div>
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+
+<a href="contact.html" class="button">Next</a>
+	<a href="interests.html" class="bbutton">Back</a>
+</body>
+</html>
+	
